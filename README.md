@@ -4,13 +4,13 @@ Bem-vindo ao meu repositório de análise de dados! Aqui, você encontrará uma 
 
 ## Visão Geral dos Projetos
 
-Este repositório é dividido em diversas pastas, cada uma representando um projeto único. Os relatórios foram elaborados com base em dados reais e apresentam análises detalhadas, insights e visualizações que ajudam na tomada de decisões estratégicas.
+Este repositório é dividido em diversas pastas, cada uma representando um projeto único. Os relatórios foram elaborados com base em dados reais públicos e apresentam análises detalhadas, insights e visualizações que ajudam na tomada de decisões estratégicas.
 
-### Projetos em Destaque:
+### Projetos em Destaque
 
 - **Mais Médicos:** Um relatório completo que analisa o impacto e os resultados do programa, utilizando dados de saúde pública para apresentar insights valiosos.
-- **[Projeto 2]:** Em breve.
-- **[Projeto 2]:** Em breve.
+- **Concurso Municipal de Buritis 2024 - Inscrições e Servidores Públicos:** Este relatório analisa os dados do concurso municipal de Buritis, previsto para 2024, e apresenta insights sobre as inscrições e os servidores públicos da cidade. Ele estabelece uma relação entre os inscritos que já são servidores públicos municipais e aqueles que não são.
+- **[Projeto 3]:** Em breve.
 
 ## Minhas Competências
 
@@ -23,10 +23,10 @@ Neste repositório, você poderá observar as seguintes competências em ação:
 
 ## Estrutura do Repositório
 
-```
+``` plaintext
 /dashboards_bi
     /mais_medicos_2024
-    /projeto_2
+    /concurso_buritis_2024
     /projeto_3
 ```
 
@@ -36,5 +36,5 @@ Sinta-se à vontade para explorar cada projeto e ver as análises detalhadas que
 
 Para mais informações ou colaborações, entre em contato:
 
-- goncalvesdani54@tianalista.onmicrosoft.com
-- https://www.linkedin.com/in/danielle-de-paula18/
+- <goncalvesdani54@tianalista.onmicrosoft.com>
+- <https://www.linkedin.com/in/danielle-de-paula18/>
