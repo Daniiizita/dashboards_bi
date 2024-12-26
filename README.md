@@ -36,5 +36,5 @@ Sinta-se à vontade para explorar cada projeto e ver as análises detalhadas que
 
 Para mais informações ou colaborações, entre em contato:
 
-- <goncalvesdani54@tianalista.onmicrosoft.com>
+- <goncalvesdani54@gmail.com>
 - <https://www.linkedin.com/in/danielle-de-paula18/>
