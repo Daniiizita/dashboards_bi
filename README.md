@@ -1,40 +1,71 @@
-# Análise de Dados e Relatórios - Repositório de Projetos
+# Power BI Dashboards: Public-Data Analysis Portfolio
 
-Bem-vindo ao meu repositório de análise de dados! Aqui, você encontrará uma coleção de projetos e relatórios que demonstram minhas habilidades em Business Intelligence e análise de dados. Cada pasta contém relatórios individuais que abordam diferentes tópicos.
+A collection of Business Intelligence projects built with Power BI and Python on publicly available Brazilian data. Each folder is a self-contained project with its data, a Power BI report (`.pbix`) and a PDF export of the dashboard.
 
-## Visão Geral dos Projetos
+> The reports and data are in Brazilian Portuguese.
 
-Este repositório é dividido em diversas pastas, cada uma representando um projeto único. Os relatórios foram elaborados com base em dados reais públicos e apresentam análises detalhadas, insights e visualizações que ajudam na tomada de decisões estratégicas.
+## Projects
 
-### Projetos em Destaque
+| Project | What it analyzes | Files |
+| --- | --- | --- |
+| [`mais_medicos_2024`](mais_medicos_2024/) | The *Mais Médicos* (More Doctors) federal program: its reach and results across Brazilian regions, states and municipalities, using public health data. | [Report (.pbix)](mais_medicos_2024/bimaismedicos.pbix) · [PDF export](mais_medicos_2024/bimaismedicos.pdf) · [`data/`](mais_medicos_2024/data/) |
+| [`concurso_buritis_2024`](concurso_buritis_2024/) | The 2024 municipal public-service exam of Buritis: applicants and the city's public servants, comparing applicants who are already municipal employees with those who are not. | [Report (.pbix)](concurso_buritis_2024/PAINEL_CONCURSO_BURITIS_2024.pbix) · [PDF export](concurso_buritis_2024/PAINEL_CONCURSO_BURITIS_2024.pdf) · [`data/`](concurso_buritis_2024/data/) · [`scripts/`](concurso_buritis_2024/scripts/) |
 
-- **Mais Médicos:** Um relatório completo que analisa o impacto e os resultados do programa, utilizando dados de saúde pública para apresentar insights valiosos.
-- **Concurso Municipal de Buritis 2024 - Inscrições e Servidores Públicos:** Este relatório analisa os dados do concurso municipal de Buritis, previsto para 2024, e apresenta insights sobre as inscrições e os servidores públicos da cidade. Ele estabelece uma relação entre os inscritos que já são servidores públicos municipais e aqueles que não são.
-- **[Projeto 3]:** Em breve.
+A third project is planned.
 
-## Minhas Competências
+<!-- TODO: confirmar — a descrição do repositório no GitHub cita ETL com Pentaho e SQL, mas não há arquivos Pentaho ou SQL no repositório. Confirmar se esse ETL existe em outro lugar ou ajustar a descrição. -->
+<!-- TODO: confirmar — indicar a fonte (portal/órgão) e a data de extração dos dados de cada projeto. -->
 
-Neste repositório, você poderá observar as seguintes competências em ação:
+## Tech stack
 
-- **Análise de Dados:** Habilidade em trabalhar com grandes volumes de dados para extrair informações significativas.
-- **Visualização de Dados:** Criação de dashboards e gráficos informativos que facilitam a compreensão dos dados.
-- **Business Intelligence:** Aplicação de ferramentas e técnicas de BI para transformar dados em insights acionáveis.
-- **Programação:** Uso de Python e DAX para manipulação e análise de dados, garantindo a eficácia das soluções propostas.
+- **Power BI Desktop** for the data model, visuals and dashboards (`.pbix` files)
+- **Python** with `pandas` for data preparation (`concurso_buritis_2024/scripts/data_excel.py`)
+- **Source data** as CSV, XLS/XLSX and PDF files
+- **DAX** for measures in the reports
 
-## Estrutura do Repositório
+<!-- TODO: confirmar — o uso de DAX foi mantido do README original; os .pbix são binários e não foi possível verificá-lo aqui. -->
 
-``` plaintext
-/dashboards_bi
-    /mais_medicos_2024
-    /concurso_buritis_2024
-    /projeto_3
+## Skills demonstrated
+
+- Data analysis on large public datasets
+- Dashboard design and data visualization
+- Business Intelligence: turning raw data into decision-oriented insights
+- Data preparation with Python
+
+## Getting started
+
+### View the dashboards
+
+- Open the PDF export of any project for a quick look, or
+- Open the `.pbix` file in [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows) for the interactive report.
+
+### Run the data-preparation script
+
+`concurso_buritis_2024/scripts/data_excel.py` merges every sheet of `buritis_concurso2024.xlsx` into a single sheet and saves it as `merged_buritis_concurso2024.xlsx`. It reads the input file and writes the output in the **current working directory**, so run it from the folder that contains the spreadsheet:
+
+```bash
+pip install pandas openpyxl
+cd concurso_buritis_2024/data
+python ../scripts/data_excel.py
 ```
 
-Sinta-se à vontade para explorar cada projeto e ver as análises detalhadas que preparei. Estou sempre aberto a feedbacks e colaborações!
+## Repository structure
 
-## Contato
+```
+mais_medicos_2024/
+├── bimaismedicos.pbix        Power BI report
+├── bimaismedicos.pdf         Dashboard export
+├── data/                     Source CSV/XLS files
+└── img/                      Logos used in the report
+concurso_buritis_2024/
+├── PAINEL_CONCURSO_BURITIS_2024.pbix
+├── PAINEL_CONCURSO_BURITIS_2024.pdf
+├── data/                     Source spreadsheets, PDFs and merged output
+├── img/
+└── scripts/data_excel.py     Merges workbook sheets with pandas
+```
 
-Para mais informações ou colaborações, entre em contato:
+## Contact
 
 - <goncalvesdani54@gmail.com>
-- <https://www.linkedin.com/in/danielle-de-paula18/>
+- [LinkedIn](https://www.linkedin.com/in/danielle-de-paula18/)
